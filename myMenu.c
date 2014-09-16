@@ -29,7 +29,7 @@
 
 typedef struct CmdNode
 {
-    char* cmd;
+        char* cmd;
 	char* desc;
 	struct CmdNode *next;
 }mCmdNode;
@@ -89,7 +89,7 @@ int main()
 		{
 			if(!strcmp(p->cmd,cmd))
 			{
-				printf("%s: This is %s cmd!\n",p->cmd,p->cmd);
+				printf("%s: This %s cmd!\n",p->cmd,p->cmd);
 				PrintCmdDesc(p);
 				break;
 			}
