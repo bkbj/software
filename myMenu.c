@@ -1,5 +1,5 @@
 /**************************************************************************************************/
-/* Copyright (C)  Lezg.com, Lezg@USTC, 2014-2015                                                  */
+/* Copyright (C)      Lezg,  SEE@USTC, 2014-2015                                                  */
 /*                                                                                                */
 /*  FILE NAME             :  menu.c                                                               */
 /*  PRINCIPAL AUTHOR      :  Lezg                                                                 */
@@ -29,7 +29,7 @@
 
 typedef struct CmdNode
 {
-	char* cmd;
+    char* cmd;
 	char* desc;
 	struct CmdNode *next;
 }mCmdNode;
@@ -90,7 +90,7 @@ int main()
 			if(!strcmp(p->cmd,cmd))
 			{
 				printf("%s : This is %s cmd!\n",p->cmd,p->cmd);
-			    PrintCmdDesc(p);
+                PrintCmdDesc(p);
 				break;
 			}
 			p=p->next;
