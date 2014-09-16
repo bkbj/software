@@ -89,8 +89,8 @@ int main()
 		{
 			if(!strcmp(p->cmd,cmd))
 			{
-				printf("%s : This is %s cmd!\n",p->cmd,p->cmd);
-                PrintCmdDesc(p);
+				printf("%s: This is %s cmd!\n",p->cmd,p->cmd);
+				PrintCmdDesc(p);
 				break;
 			}
 			p=p->next;
